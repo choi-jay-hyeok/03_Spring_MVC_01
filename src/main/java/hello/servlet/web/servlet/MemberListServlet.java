@@ -40,13 +40,7 @@ public class MemberListServlet extends HttpServlet {
         w.write(" <th>age</th>");
         w.write(" </thead>");
         w.write(" <tbody>");
-/*
-w.write(" <tr>");
-w.write(" <td>1</td>");
-w.write(" <td>userA</td>");
-w.write(" <td>10</td>");
-w.write(" </tr>");
-*/
+
         for (Member member : members) {
             w.write(" <tr>");
             w.write(" <td>" + member.getId() + "</td>");
@@ -54,6 +48,7 @@ w.write(" </tr>");
             w.write(" <td>" + member.getAge() + "</td>");
             w.write(" </tr>");
         }
+
         w.write(" </tbody>");
         w.write("</table>");
         w.write("</body>");
